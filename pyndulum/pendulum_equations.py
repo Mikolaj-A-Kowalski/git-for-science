@@ -92,3 +92,8 @@ def bpm(len: float) -> float:
         pendulum frequency in beats per minute [1 / min]
     """
     return 60.0 / get_period(len)
+
+def l(t):
+    t = t / np.pi * 2
+    return 9.82 * t * t
+
